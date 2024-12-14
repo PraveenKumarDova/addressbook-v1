@@ -1,3 +1,6 @@
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -93,10 +96,10 @@
 		
 				<!-- LOGGING -->
 		<dependency>
-	<groupId>log4j</groupId>
-	<artifactId>log4j</artifactId>
-	<version>1.2.9</version>
-</dependency>
+	       <groupId>log4j</groupId>
+	       <artifactId>log4j</artifactId>
+	       <version>1.2.9</version>
+        </dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -179,11 +182,11 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.3.v20140905</version>
             </plugin>
-      <plugin>
-         <groupId>org.jacoco</groupId>
-         <artifactId>jacoco-maven-plugin</artifactId>
-         <version>0.8.8</version>
-         <executions>
+            <plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.8</version>
+				<executions>
             <!-- Prepares the agent during the test phase to gather coverage data -->
             <execution>
                <id>prepare-agent</id>
@@ -191,20 +194,20 @@
                   <goal>prepare-agent</goal>
                </goals>
             </execution>
-            <!-- Generates the coverage report in HTML format in the target/site/jacoco directory -->
+              <!-- Generates the coverage report in HTML format in the target/site/jacoco directory -->
             <execution>
                <id>report</id>
                <phase>verify</phase>
-               <goals>
+                <goals>
                   <goal>report</goal>
-               </goals>
+                </goals>
             </execution>
-         </executions>
-      </plugin>
+             </executions>
+            </plugin>
   
 
 			
-						<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
@@ -227,7 +230,7 @@
     </build>
 	
 	  
-    <reporting>
+   <reporting>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
