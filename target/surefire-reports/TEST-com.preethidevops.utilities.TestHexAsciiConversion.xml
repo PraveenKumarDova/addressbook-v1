@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.preethidevops.utilities.TestHexAsciiConversion" time="0.034" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.preethidevops.utilities.TestHexAsciiConversion" time="0.026" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.13+11-LTS"/>
@@ -55,8 +55,8 @@
     <property name="java.vendor.version" value="Corretto-17.0.13.11.1"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase name="testAsciiToHexValid" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.034"/>
-  <testcase name="testAsciiToHexNull" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.019"/>
-  <testcase name="testHexToAsciiValid" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.016"/>
-  <testcase name="testHextoAsciiNull" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.004"/>
+  <testcase name="testAsciiToHexValid" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.022"/>
+  <testcase name="testAsciiToHexNull" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.009"/>
+  <testcase name="testHexToAsciiValid" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0.002"/>
+  <testcase name="testHextoAsciiNull" classname="com.preethidevops.utilities.TestHexAsciiConversion" time="0"/>
 </testsuite>
