@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.preethidevops.utilities.TestGenericComparator" time="0.071" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.preethidevops.utilities.TestGenericComparator" time="0.07" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.13+11-LTS"/>
@@ -47,6 +47,7 @@
     <property name="sun.stderr.encoding" value="UTF-8"/>
     <property name="java.specification.maintenance.version" value="1"/>
     <property name="maven.home" value="/usr/share/maven"/>
+    <property name="log4jFixerAgentVersion" value="1"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2024-10-15"/>
     <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
@@ -55,18 +56,18 @@
     <property name="java.vendor.version" value="Corretto-17.0.13.11.1"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase name="testSortEmpNameAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.035"/>
-  <testcase name="testSortEmpNameDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.004"/>
-  <testcase name="testSortEmpIDAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.005"/>
-  <testcase name="testSortEmpIDDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
+  <testcase name="testSortEmpNameAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.033"/>
+  <testcase name="testSortEmpNameDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
+  <testcase name="testSortEmpIDAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
+  <testcase name="testSortEmpIDDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.001"/>
   <testcase name="testSortEmpSpareAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
-  <testcase name="testSortEmpSpareDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.001"/>
-  <testcase name="testSortEmpSpareDesc2" classname="com.preethidevops.utilities.TestGenericComparator" time="0.002"/>
-  <testcase name="testSortEmpSpareAsc2" classname="com.preethidevops.utilities.TestGenericComparator" time="0.003"/>
+  <testcase name="testSortEmpSpareDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0.018"/>
+  <testcase name="testSortEmpSpareDesc2" classname="com.preethidevops.utilities.TestGenericComparator" time="0.001"/>
+  <testcase name="testSortEmpSpareAsc2" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
   <testcase name="testSortEmpSpare2StringAsc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
   <testcase name="testSortEmpSpare2StringDesc" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
-  <testcase name="testSortEmpNameAscNewComparator" classname="com.preethidevops.utilities.TestGenericComparator" time="0.015"/>
+  <testcase name="testSortEmpNameAscNewComparator" classname="com.preethidevops.utilities.TestGenericComparator" time="0.009"/>
   <testcase name="testSortEmpNameAscNewComparator3Element" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
-  <testcase name="testSortEmpNameDescNewComparator3Element" classname="com.preethidevops.utilities.TestGenericComparator" time="0.004"/>
+  <testcase name="testSortEmpNameDescNewComparator3Element" classname="com.preethidevops.utilities.TestGenericComparator" time="0.008"/>
   <testcase name="testDoubleSort" classname="com.preethidevops.utilities.TestGenericComparator" time="0"/>
 </testsuite>
