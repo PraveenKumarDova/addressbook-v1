@@ -63,7 +63,7 @@ pipeline {
 
 
     stage('package') {
-      agent label 'jenkins-slave1'
+      agent { label 'jenkins-slave1' }
       steps {
         script {
           echo "Packaging the code in ${params.APPVERSION} environments"
