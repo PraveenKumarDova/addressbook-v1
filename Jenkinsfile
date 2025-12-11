@@ -14,6 +14,7 @@ pipeline {
 
   stages {
     stage('compile') {
+      agent any
       steps {
         script {
           echo "Compiling the code in ${params.Env} environments"
@@ -23,7 +24,7 @@ pipeline {
     }
 
     stage('test') {
-      
+      agent any 
       when {
         expression { return params.executeTests == true }
       }
@@ -33,9 +34,15 @@ pipeline {
           sh "mvn test"
         }
       }
+      post {
+        always {
+          junit 'target/surefire-reports/*.xml'
+        }
+      }
     }
 
     stage('CodeReview') {
+      agent any
       steps {
         script {
           echo "CodeReview in ${params.Env} environments"
@@ -45,6 +52,7 @@ pipeline {
     }
 
     stage('CodeCoverageAnalysis') {
+      agent any 
       steps {
         script {
           echo "CodeCoverageAnalysis in ${params.Env} environments"
@@ -55,6 +63,7 @@ pipeline {
 
 
     stage('package') {
+      agent label 'jenkins-slave1'
       steps {
         script {
           echo "Packaging the code in ${params.APPVERSION} environments"
